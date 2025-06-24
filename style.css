@@ -1,0 +1,108 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Fullscreen background image with translucent overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center center/cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Hero section */
+.hero {
+  padding: 60px 20px 30px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+select {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #ffffffdd;
+  color: #333;
+}
+
+/* Book card layout */
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 20px;
+  gap: 30px;
+}
+
+.book {
+  background-color: #ffffffdd;
+  border-radius: 12px;
+  padding: 15px;
+  width: 220px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: #222;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.book img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.book h3 {
+  margin: 15px 0 10px;
+  font-size: 1.1rem;
+}
+
+.book button {
+  padding: 10px 12px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.book button:hover {
+  background-color: #e25548;
+}
+
+.book button.read {
+  background-color: #4caf50 !important;
+}
