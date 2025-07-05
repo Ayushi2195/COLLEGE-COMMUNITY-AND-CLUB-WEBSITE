@@ -73,12 +73,10 @@ if (contactForm) {
         formData.forEach((value, key) => {
             formObject[key] = value;
         });
-        
         // Here you would typically send the data to a server
         console.log('Contact form submitted:', formObject);
-        
         // Show success message
-        alert('Thank you for your message! We\'ll get back to you soon.');
+        alert('Sent message!');
         contactForm.reset();
     });
 }
@@ -173,3 +171,33 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+// Modal for Join Us Now
+const openJoinModalBtn = document.getElementById('openJoinModal');
+const joinModal = document.getElementById('joinModal');
+const closeJoinModalBtn = document.getElementById('closeJoinModal');
+const joinFormModal = document.getElementById('joinFormModal');
+
+if (openJoinModalBtn && joinModal && closeJoinModalBtn) {
+    openJoinModalBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        joinModal.classList.remove('hidden');
+    });
+    closeJoinModalBtn.addEventListener('click', function() {
+        joinModal.classList.add('hidden');
+    });
+    // Close modal when clicking outside the modal content
+    joinModal.addEventListener('click', function(e) {
+        if (e.target === joinModal) {
+            joinModal.classList.add('hidden');
+        }
+    });
+}
+if (joinFormModal) {
+    joinFormModal.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Sent message!');
+        joinFormModal.reset();
+        joinModal.classList.add('hidden');
+    });
+}

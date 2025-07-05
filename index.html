@@ -44,7 +44,7 @@
                         Join our vibrant college community to participate in exciting events, meet like-minded individuals, and create unforgettable memories during your academic journey.
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#join" class="bg-amber-500 text-white px-8 py-3 rounded-full text-center font-medium hover:bg-amber-600 transition">
+                        <a href="#" id="openJoinModal" class="bg-amber-500 text-white px-8 py-3 rounded-full text-center font-medium hover:bg-amber-600 transition cursor-pointer">
                             Join Us Now
                         </a>
                         <a href="#events" class="border-2 border-white px-8 py-3 rounded-full text-center font-medium hover:bg-white hover:bg-opacity-10 transition">
@@ -53,8 +53,8 @@
                     </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                         alt="Students collaborating" 
+                    <img src="images/gallery9.jpg" 
+                         alt="Home Hero Image" 
                          class="rounded-lg shadow-2xl max-w-md w-full">
                 </div>
             </div>
@@ -64,15 +64,21 @@
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+            <div class="flex flex-col items-center text-center">
+                <div class="w-full md:w-3/4 lg:w-2/3 mb-12">
                     <h2 class="text-3xl font-bold mb-6">About <span class="text-amber-400">CampusConnect</span></h2>
                     <p class="text-gray-300 mb-6">
                         Founded in 2023, CampusConnect is the official student community platform of [Your College Name], dedicated to fostering connections, personal growth, and academic excellence among students across all disciplines.
                     </p>
+                    <p class="text-gray-300 mb-6">
+                        At CampusConnect, we believe in the power of collaboration and diversity. Our community brings together students from various backgrounds, encouraging them to share ideas, support each other, and grow together. We organize a wide range of events, workshops, and networking opportunities to help you develop both personally and professionally.
+                    </p>
+                    <p class="text-gray-300 mb-6">
+                        Whether you're looking to enhance your leadership skills, participate in fun activities, or simply make new friends, CampusConnect is your gateway to a vibrant and inclusive college experience. Join us and be a part of a community that values learning, creativity, and lifelong connections.
+                    </p>
                     <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="bg-amber-500 p-3 rounded-full mr-4 mt-1">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-amber-500 p-3 rounded-full mb-2">
                                 <i class="fas fa-bullseye text-white"></i>
                             </div>
                             <div>
@@ -80,8 +86,8 @@
                                 <p class="text-gray-300">To create an inclusive environment where students can connect, collaborate, and grow both personally and professionally.</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <div class="bg-amber-500 p-3 rounded-full mr-4 mt-1">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-amber-500 p-3 rounded-full mb-2">
                                 <i class="fas fa-eye text-white"></i>
                             </div>
                             <div>
@@ -94,23 +100,6 @@
                         <a href="#join" class="bg-amber-500 text-gray-900 px-6 py-3 rounded-full font-medium hover:bg-amber-400 transition inline-block">
                             Join Our Community
                         </a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 grid grid-cols-2 gap-4">
-                    <div class="overflow-hidden rounded-lg">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" 
-                             alt="Team working together" 
-                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="overflow-hidden rounded-lg">
-                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                             alt="Students collaborating" 
-                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="col-span-2 overflow-hidden rounded-lg">
-                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1112&q=80" 
-                             alt="Group discussion" 
-                             class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
                     </div>
                 </div>
             </div>
@@ -151,10 +140,11 @@
                          alt="Workshop" 
                          class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <div class="text-amber-400 text-sm mb-2">July 15, 2023</div>
+                        <div class="text-amber-400 text-sm mb-2">28 August, 2025</div>
                         <h3 class="text-xl font-bold mb-2">Leadership Workshop</h3>
                         <p class="text-gray-300 mb-4">Learn essential leadership skills from industry experts and successful alumni.</p>
-                        <button class="text-amber-400 hover:text-amber-300 font-medium">Learn More →</button>
+                        <p class="text-amber-300 font-semibold mb-2">Description:</p>
+                        <p class="text-gray-400 mb-2">This workshop will help you unlock your leadership potential through interactive sessions, real-world case studies, and group activities. Perfect for students aspiring to take on leadership roles in college and beyond.</p>
                     </div>
                 </div>
                 <!-- Event Card 2 -->
@@ -163,10 +153,11 @@
                          alt="Hackathon" 
                          class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <div class="text-amber-400 text-sm mb-2">July 22, 2023</div>
+                        <div class="text-amber-400 text-sm mb-2">15 September, 2025</div>
                         <h3 class="text-xl font-bold mb-2">Annual Hackathon</h3>
                         <p class="text-gray-300 mb-4">24-hour coding competition with exciting prizes and networking opportunities.</p>
-                        <button class="text-amber-400 hover:text-amber-300 font-medium">Learn More →</button>
+                        <p class="text-amber-300 font-semibold mb-2">Description:</p>
+                        <p class="text-gray-400 mb-2">Join our flagship hackathon to collaborate, innovate, and solve real-world problems. Teams will compete to build creative solutions, with mentorship from industry professionals and a chance to win amazing prizes.</p>
                     </div>
                 </div>
                 <!-- Event Card 3 -->
@@ -175,10 +166,11 @@
                          alt="Networking" 
                          class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <div class="text-amber-400 text-sm mb-2">July 30, 2023</div>
+                        <div class="text-amber-400 text-sm mb-2">1 October, 2025</div>
                         <h3 class="text-xl font-bold mb-2">Alumni Networking</h3>
                         <p class="text-gray-300 mb-4">Connect with successful alumni and expand your professional network.</p>
-                        <button class="text-amber-400 hover:text-amber-300 font-medium">Learn More →</button>
+                        <p class="text-amber-300 font-semibold mb-2">Description:</p>
+                        <p class="text-gray-400 mb-2">Meet and interact with our accomplished alumni, hear their stories, and gain valuable career advice. This event is a great opportunity to build connections and learn from those who have walked your path.</p>
                     </div>
                 </div>
             </div>
@@ -296,9 +288,6 @@
                     <!-- Testimonial 1 -->
                     <div class="bg-gray-900 p-6 rounded-lg">
                         <div class="flex items-center mb-4">
-                            <img src="https://randomuser.me/api/portraits/women/33.jpg" 
-                                 alt="Alex Kim" 
-                                 class="w-12 h-12 rounded-full mr-4">
                             <div>
                                 <h4 class="font-semibold">Alex Kim</h4>
                                 <p class="text-sm text-gray-400">Computer Science '25</p>
@@ -312,9 +301,6 @@
                     <!-- Testimonial 2 -->
                     <div class="bg-gray-900 p-6 rounded-lg">
                         <div class="flex items-center mb-4">
-                            <img src="https://randomuser.me/api/portraits/men/45.jpg" 
-                                 alt="David Park" 
-                                 class="w-12 h-12 rounded-full mr-4">
                             <div>
                                 <h4 class="font-semibold">David Park</h4>
                                 <p class="text-sm text-gray-400">Business '26</p>
@@ -328,9 +314,6 @@
                     <!-- Testimonial 3 -->
                     <div class="bg-gray-900 p-6 rounded-lg">
                         <div class="flex items-center mb-4">
-                            <img src="https://randomuser.me/api/portraits/women/52.jpg" 
-                                 alt="Priya Patel" 
-                                 class="w-12 h-12 rounded-full mr-4">
                             <div>
                                 <h4 class="font-semibold">Priya Patel</h4>
                                 <p class="text-sm text-gray-400">Design '24</p>
@@ -370,108 +353,170 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <!-- Photo 1 -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://source.unsplash.com/random/800x600/?indian-college-cultural-fest" 
-                         alt="College Cultural Event" 
+                    <img src="images/gallery1.jpg" 
+                         alt="College Group Selfie" 
                          class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="text-center p-4">
-                            <h3 class="text-white font-bold text-lg">Cultural Fest 2023</h3>
+                            <h3 class="text-white font-bold text-lg">College Group Selfie</h3>
                         </div>
                     </div>
                 </div>
 
                 <!-- Photo 2 -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://source.unsplash.com/random/800x600/?indian-college-cultural-fest" 
-                         alt="College Seminar" 
+                    <img src="images/gallery2.jpg" 
+                         alt="Students Celebrating" 
                          class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="text-center p-4">
-                            <h3 class="text-white font-bold text-lg">Tech Seminar</h3>
+                            <h3 class="text-white font-bold text-lg">Celebration</h3>
                         </div>
                     </div>
                 </div>
 
                 <!-- Photo 3 -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://source.unsplash.com/random/800x600/?indian-college-cultural-fest" 
-                         alt="College Sports Day" 
+                    <img src="images/gallery3.jpg" 
+                         alt="Classroom Lecture" 
                          class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="text-center p-4">
-                            <h3 class="text-white font-bold text-lg">Sports Day</h3>
+                            <h3 class="text-white font-bold text-lg">Classroom Lecture</h3>
                         </div>
                     </div>
                 </div>
 
                 <!-- Photo 4 -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://source.unsplash.com/random/800x600/?indian-college-cultural-fest" 
-                         alt="College Graduation" 
+                    <img src="images/gallery4.jpg" 
+                         alt="College Fest Night" 
                          class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="text-center p-4">
-                            <h3 class="text-white font-bold text-lg">Graduation Day</h3>
+                            <h3 class="text-white font-bold text-lg">College Fest Night</h3>
                         </div>
                     </div>
                 </div>
 
                 <!-- Photo 5 -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://source.unsplash.com/random/800x600/?indian-college-cultural-fest" 
-                         alt="College Workshop" 
+                    <img src="images/gallery5.jpg" 
+                         alt="Classroom Smiles" 
                          class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="text-center p-4">
-                            <h3 class="text-white font-bold text-lg">Workshop</h3>
+                            <h3 class="text-white font-bold text-lg">Classroom Smiles</h3>
                         </div>
                     </div>
                 </div>
 
                 <!-- Photo 6 -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://source.unsplash.com/random/800x600/?indian-college-cultural-fest" 
-                         alt="College Freshers" 
+                    <img src="images/gallery6.jpg" 
+                         alt="Charity Event" 
                          class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="text-center p-4">
-                            <h3 class="text-white font-bold text-lg">Freshers' Party</h3>
+                            <h3 class="text-white font-bold text-lg">Charity Event</h3>
                         </div>
                     </div>
                 </div>
 
                 <!-- Photo 7 -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://source.unsplash.com/random/800x600/?indian-college-cultural-fest" 
-                         alt="College Independence Day" 
+                    <img src="images/gallery7.jpg" 
+                         alt="Case Study Competition" 
                          class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="text-center p-4">
-                            <h3 class="text-white font-bold text-lg">Independence Day</h3>
+                            <h3 class="text-white font-bold text-lg">Case Study Competition</h3>
                         </div>
                     </div>
                 </div>
 
                 <!-- Photo 8 -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://source.unsplash.com/random/800x600/?indian-college-cultural-fest" 
-                         alt="College Republic Day" 
+                    <img src="images/gallery8.jpg" 
+                         alt="Hackathon and PPT" 
                          class="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div class="text-center p-4">
-                            <h3 class="text-white font-bold text-lg">Republic Day</h3>
+                            <h3 class="text-white font-bold text-lg">Hackathon and PPT</h3>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="text-center mt-12">
-                <button class="px-6 py-3 bg-amber-500 text-gray-900 rounded-full font-medium hover:bg-amber-400 transition">
-                    View More Photos
-                </button>
+    <!-- Contact Section -->
+    <section id="contact" class="py-10 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Contact <span class="text-amber-400">Us</span></h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">
+                    Have questions, suggestions, or want to collaborate? Reach out to us!
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row md:space-x-12">
+                <!-- Contact Form -->
+                <form id="contactForm" class="bg-gray-800 rounded-lg p-8 flex-1 mb-8 md:mb-0 shadow-lg">
+                    <div class="mb-6">
+                        <label class="block text-gray-300 mb-2" for="name">Name</label>
+                        <input class="w-full px-4 py-2 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-amber-400" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-300 mb-2" for="email">Email</label>
+                        <input class="w-full px-4 py-2 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-amber-400" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-300 mb-2" for="message">Message</label>
+                        <textarea class="w-full px-4 py-2 rounded bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-amber-400" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-amber-500 text-gray-900 px-6 py-2 rounded-full font-medium hover:bg-amber-400 transition">Send Message</button>
+                </form>
+                <!-- Contact Info -->
+                <div class="flex-1 flex flex-col justify-center bg-gray-800 rounded-lg py-2 px-4 shadow-lg">
+                    <h3 class="text-2xl font-bold text-amber-400 mb-4 text-center">INFO</h3>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-info-circle text-amber-400 text-2xl mr-4"></i>
+                        <span class="text-gray-300 text-xl font-semibold">Email: info@campusconnect.edu.in</span>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-info-circle text-amber-400 text-2xl mr-4"></i>
+                        <span class="text-gray-300 text-xl font-semibold">Phone: +91 98765 43210</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-info-circle text-amber-400 text-2xl mr-4"></i>
+                        <span class="text-gray-300 text-xl font-semibold">Address: CampusConnect, 42 Knowledge Park, New Delhi, 110001</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <div id="joinModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 hidden">
+        <div class="bg-gray-900 rounded-lg p-8 w-full max-w-md relative shadow-2xl">
+            <button id="closeJoinModal" class="absolute top-2 right-2 text-gray-400 hover:text-amber-400 text-2xl font-bold">&times;</button>
+            <h2 class="text-2xl font-bold mb-6 text-center text-amber-400">Join Our Community</h2>
+            <form id="joinFormModal" class="space-y-4">
+                <div>
+                    <label class="block text-gray-300 mb-1" for="joinName">Name</label>
+                    <input class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-400" type="text" id="joinName" name="name" required>
+                </div>
+                <div>
+                    <label class="block text-gray-300 mb-1" for="joinEmail">Email</label>
+                    <input class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-400" type="email" id="joinEmail" name="email" required>
+                </div>
+                <div>
+                    <label class="block text-gray-300 mb-1" for="joinCourse">Course</label>
+                    <input class="w-full px-4 py-2 rounded bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-400" type="text" id="joinCourse" name="course" required>
+                </div>
+                <button type="submit" class="w-full bg-amber-500 text-gray-900 px-6 py-2 rounded-full font-medium hover:bg-amber-400 transition">Join Now</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

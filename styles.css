@@ -8,7 +8,7 @@ body {
 /* Hero Section */
 .hero-section {
     background: linear-gradient(rgba(44, 24, 16, 0.9), rgba(44, 24, 16, 0.9)), 
-                url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover;
+                url('images/gallery9.jpg') center/cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -137,4 +137,8 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #d97706;
+}
+
+html {
+  scroll-behavior: smooth;
 }
